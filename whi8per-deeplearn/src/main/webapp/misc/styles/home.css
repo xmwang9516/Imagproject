@@ -1,0 +1,36 @@
+.container-fluid {
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	display:hidden;
+}
+
+.nav-pills {
+	margin-bottom: 0px;
+}
+
+.tab-content {
+	overflow: auto;
+	position: relative;
+	z-index: 10;
+	background-color: transparent;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+.tab-content .tab-pane{
+	padding:0px 0px 0px 0px;
+}
+
+.page-content {
+	background: url(../../misc/images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	min-height: 604px;
+	height: 800px !important;
+}
+
+h1.slogan {
+	color: #fff;
+	margin-bottom: 20px;
+}

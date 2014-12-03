@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <!-- Output to Console -->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+	      <pattern>%date %level [%thread] %10logger [line:%line] %msg%n</pattern>
+	    </encoder>
+    </appender>
+
+	<appender name="log-server" class="com.lakeside.core.log.appender.AppNamedSocketAppender">
+		<app>mediasenze</app>
+		<remoteHost>172.29.35.187</remoteHost>
+		<port>9500</port>
+		<reconnectionDelay>10000</reconnectionDelay>
+		<includeCallerData>true</includeCallerData>
+	</appender>
+    
+    <logger name="com.lakeside" level="INFO"/>
+    <logger name="org.springframework" level="ERROR"/>
+    <logger name="org.hibernate" level="ERROR"/>
+    <logger name="org.apache.zookeeper" level="ERROR"/>
+    <logger name="LogableExceptionResolver" level="WARN"/>
+    <logger name="HBaseClient" level="INFO"/>
+    <logger name="org.cometd.server" level="WARN"/>
+    <logger name="org.cometd.websocket.server" level="WARN"/>
+    <logger name="access.log" level="INFO" />
+    <logger name="com.whi8per" level="INFO" />
+    <root level="WARN">
+    	<appender-ref ref="log-server"/>
+        <appender-ref ref="Console"/>
+    </root>
+</configuration>

@@ -1,0 +1,178 @@
+/**
+此样式文件主要用来覆盖模板中的样式，以进行自定义
+**/
+body {margin:0px; padding:0px;}
+.modal { padding: 6px; 
+overflow-y: auto;
+max-height: 80%;
+}
+.modal.modal-loading{
+	top:40%;
+	width:auto !important;
+	margin-left: 0px;
+}
+.modal-backdrop{
+	background-color: white;}
+.modal-backdrop.modal-backdrop-white{
+	background-color: white;
+}
+.modal-body {
+	color:black!important;
+	background-color: transparent;
+}
+.modal-body p{
+	text-align:center;
+}
+#header .dropdown-menu {
+}
+#header #top-select .dropdown-menu {
+		max-height: 500px;
+	overflow-y: hidden;
+	padding:0px;
+	outline:none!important;
+}
+#header #time-select .dropdown-menu {
+		max-height: 500px;
+	overflow-y: hidden;
+	padding:0px;
+	outline:none!important;
+}
+
+/** note feedback style**/
+
+.btn-feed {padding: 0px 1px;
+border-radius: 9px;
+width: 20px;
+float: right;
+height: 21px;}
+.btn-feed i {display:block;}
+
+.feedback_irrelevant .btn-feed{
+	background-color: #A5A09A;
+}
+
+/** map info window style **/
+.info-window label{ 
+	margin-bottom: 0px;
+	line-height: normal !important;
+	display: inline;
+	font-weight: bold;
+}
+.dropdown-menu li {list-style-type: none;}
+.row-fluid [class*="span"] { /**margin-left:20px;**/}
+
+.navbar-fixed-top, .navbar-fixed-bottom { z-index: 999; }
+#header #top-select .dropdown-toggle i {margin-left:10px;}
+#header #top-select .dropdown-toggle i img{ height:26px;}
+
+#header #top-select .objectselect i {margin-left:10px;}
+#header #top-select .objectselect i img{ height:26px;}
+
+/**#header #top-select .dropdown-menu {right:auto;}**/
+#header #top-select .dropdown-menu li img {height:20px;}
+#header #top-select .dropdown-menu li a i{margin-right:10px;}
+
+.popup-sobjects ul{margin:0px;}
+.popup-sobjects li {background: #f2f2f0;
+	border-bottom: 1px dotted #c9c9c9;
+	margin-bottom: 0;
+	list-style: none;}
+.popup-sobjects li img {height:20px;}
+.popup-sobjects li a {padding:10px 10px; font-size: 13px;display: block;text-decoration: none;}
+.popup-sobjects li > a:hover {
+		background-color:white;}
+.popup-sobjects li a i{margin-right:10px;} 
+
+/** main content**/
+.page-content{
+	margin-left: 0px;
+	padding-top: 10px;
+}
+
+#content a.edit {
+	text-decoration: none;
+	cursor: pointer;
+	font-size:12px;
+}
+#content a.edit:hover{
+	color:red;
+}
+/** custom model styles **/
+.modal .form-horizontal {
+	margin-bottom:0px;
+}
+.modal .form-horizontal .control-label {
+	width: 90px;
+}
+.modal .form-horizontal .controls {
+	margin-left: 100px;
+}
+body{
+	background-color:white;
+}
+.logo{
+	margin:9px 14px;
+}
+.header{
+	min-height:48px !important;
+}
+.header .navbar-inner{
+	min-height:48px !important;
+	border-bottom: 1px solid #E5E9EC;
+}
+.header .header-seperation{
+	background-color:white;
+	height:48px;
+}
+.container-fluid{
+	background-color:#E5E9EC;
+}
+.breadcrumb {
+	margin-bottom: 12px;
+}
+
+/** search bar styles **/
+.no-margin {
+margin: 0px !important;
+}
+.no-padding {
+padding: 10px !important;
+}
+
+.col-md-6 {
+width: 30%;
+}
+
+
+
+
+/** custom padding styles **/
+.p-l-0{
+	padding-left:0px !important;
+}
+.p-r-0{
+	padding-right:0px !important;
+}
+.p-t-0{
+	padding-top:0px !important;
+}
+.p-b-0{
+	padding-bottom:0px !important;
+}
+
+.btn-primary {
+	color: #ffffff;
+	background-color: #eb6864;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+	color: #ffffff;
+	background-color: #e64540;
+	border-color: #e4332e;
+}
+
+.grid.simple .grid-body {
+border: 1px solid #dddddd;
+border-left: 0px;
+border-bottom: 0px;
+border-right: 0px;
+}

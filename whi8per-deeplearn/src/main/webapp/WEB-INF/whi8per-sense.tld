@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.1</jsp-version>
+	<short-name>sense</short-name>
+	<display-name>sense</display-name>
+	<description>sense tag library</description>
+	<tag>
+		<name>menu</name>
+		<tag-class>com.whi8per.sense.web.tags.NavigationMenu</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+	<tag>
+		<name>breadcrumb</name>
+		<tag-class>com.whi8per.sense.web.tags.Breadcrumb</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+	<tag>
+		<name>pagination</name>
+		<tag-class>com.whi8per.sense.deeplearn.web.tags.Pagination</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>page</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>manager</name>
+		<tag-class>com.whi8per.sense.deeplearn.web.tags.IsManagerTag</tag-class>
+		<body-content>JSP</body-content>
+	</tag>
+</taglib>
